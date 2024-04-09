@@ -10,7 +10,11 @@ type AppProps = {
 
 }
 
+
+
 const App: React.FC<AppProps> = (props) => {
+  const num = 10;
+  
   return (
     <>
       <h1 id='app-root'>
