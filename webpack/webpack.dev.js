@@ -1,5 +1,5 @@
 const webpack = require("webpack");
-const ReactRefreshWebpackPlugin = require('react-refresh-webpack-plugin'); 
+// const ReactRefreshWebpackPlugin = require('react-refresh-webpack-plugin'); 
 
 /** TODO
  *  add the react refresh webpack plugin to avoid the loss of state when src code is saved.
@@ -15,7 +15,7 @@ module.exports = {
         new webpack.DefinePlugin({
             'process.env.name' : JSON.stringify({appName: "foodnodeweb", mode: this.mode, devtool: this.devtool})
         }),
-        new webpack.HotModuleReplacementPlugin(),
-        new ReactRefreshWebpackPlugin()
+       
+        // new ReactRefreshWebpackPlugin()
     ]
 }
